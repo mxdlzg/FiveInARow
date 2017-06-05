@@ -43,7 +43,7 @@ public class Chessboard {
         background.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                chessboardControl.onActionDown(e.getX(), e.getY());
+                chessboardControl.userAction(e.getX(), e.getY());
             }
         });
     }
@@ -87,6 +87,7 @@ public class Chessboard {
 
     /**
      * 界面主方法
+     *
      * @param args args
      */
     public static void main(String[] args) {

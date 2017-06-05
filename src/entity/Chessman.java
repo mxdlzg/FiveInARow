@@ -1,34 +1,32 @@
 package entity;
 
-import java.awt.*;
-
 /**
  * Created by 廷江 on 2017/6/3.
  */
 public class Chessman {
-    private Color color;
+    private int color;
     private int posX,posY;
 
     public Chessman() {
-        color = java.awt.Color.BLACK;
+        color = Config.COLOR_BLACK;
         posX = posY = 0;
     }
 
-    public Chessman(Color color) {
+    public Chessman(int color) {
         this.color = color;
     }
 
-    public Chessman(Color color, int posX, int posY) {
+    public Chessman(int color, int posX, int posY) {
         this.color = color;
         this.posX = posX;
         this.posY = posY;
     }
 
-    public Color getColor() {
+    public int getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(int color) {
         this.color = color;
     }
 
